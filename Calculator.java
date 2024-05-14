@@ -22,7 +22,7 @@ public class Calculator implements ActionListener{
 	public Calculator(){
 		
 		Toolkit t = Toolkit.getDefaultToolkit();  
-        Image image = t.getImage("Icon100.png");
+        Image image = t.getImage("Icon.png");
 		
 		frame = new JFrame("My Calculator Design");
 		frame.setIconImage(image);	frame.setResizable(false);
@@ -33,8 +33,8 @@ public class Calculator implements ActionListener{
 		textField1 = new JTextField();			textField2 = new JTextField();
 		textField1.setEditable(false);			textField2.setEditable(false);
 		textField1.setBounds(10,30,290,40);		textField2.setBounds(10,70,290,40);
-		textField1.setBorder(null);				textField2.setBorder(null);
-		textField1.setFont(font2);				textField2.setFont(font2);
+		textField1.setBorder(null);			textField2.setBorder(null);
+		textField1.setFont(font2);			textField2.setFont(font2);
 
 		textField1.setHorizontalAlignment(JTextField.RIGHT);
 		textField2.setHorizontalAlignment(JTextField.RIGHT);
@@ -60,14 +60,14 @@ public class Calculator implements ActionListener{
 		modButton.setPreferredSize(new Dimension(60,60));   
 		
 		addButton.setBackground(Color.orange);		addButton.setForeground(Color.white);	addButton.setFont(font1);
-		subButton.setBackground(Color.orange);      subButton.setForeground(Color.white);	subButton.setFont(font1);
-		mulButton.setBackground(Color.orange);      mulButton.setForeground(Color.white);	mulButton.setFont(font1);
-		divButton.setBackground(Color.orange);      divButton.setForeground(Color.white);	divButton.setFont(font1);
+		subButton.setBackground(Color.orange);      	subButton.setForeground(Color.white);	subButton.setFont(font1);
+		mulButton.setBackground(Color.orange);      	mulButton.setForeground(Color.white);	mulButton.setFont(font1);
+		divButton.setBackground(Color.orange);      	divButton.setForeground(Color.white);	divButton.setFont(font1);
 		decButton.setBackground(Color.lightGray);	decButton.setForeground(Color.white);	decButton.setFont(font1);
-		equButton.setBackground(Color.cyan);        equButton.setForeground(Color.white);	equButton.setFont(font1);
-		clrButton.setBackground(Color.orange);      clrButton.setForeground(Color.white);	clrButton.setFont(font3);
-		sigButton.setBackground(Color.orange);      sigButton.setForeground(Color.white);	sigButton.setFont(font1);
-		modButton.setBackground(Color.orange);      modButton.setForeground(Color.white);	modButton.setFont(font1);
+		equButton.setBackground(Color.cyan);     	equButton.setForeground(Color.white);	equButton.setFont(font1);
+		clrButton.setBackground(Color.orange);      	clrButton.setForeground(Color.white);	clrButton.setFont(font3);
+		sigButton.setBackground(Color.orange);      	sigButton.setForeground(Color.white);	sigButton.setFont(font1);
+		modButton.setBackground(Color.orange);      	modButton.setForeground(Color.white);	modButton.setFont(font1);
 		
 		ImageIcon imageDel = new ImageIcon(t.getImage("Icon156.png"));
 		
@@ -110,15 +110,15 @@ public class Calculator implements ActionListener{
 		keyButton[9].setBackground(Color.lightGray);	keyButton[9].setForeground(Color.white);	keyButton[9].setFont(font1);
 		
 		keyButton[0].addActionListener(this);	addButton.addActionListener(this);	addButton.setFont(font1);
-		keyButton[1].addActionListener(this);	subButton.addActionListener(this);  subButton.setFont(font4);
-		keyButton[2].addActionListener(this);	mulButton.addActionListener(this);  mulButton.setFont(font1);
-		keyButton[3].addActionListener(this);	divButton.addActionListener(this);  divButton.setFont(font4);
-		keyButton[4].addActionListener(this);	decButton.addActionListener(this);  decButton.setFont(font1);
-		keyButton[5].addActionListener(this);	equButton.addActionListener(this);  equButton.setFont(font2);
+		keyButton[1].addActionListener(this);	subButton.addActionListener(this); 	subButton.setFont(font4);
+		keyButton[2].addActionListener(this);	mulButton.addActionListener(this);  	mulButton.setFont(font1);
+		keyButton[3].addActionListener(this);	divButton.addActionListener(this);  	divButton.setFont(font4);
+		keyButton[4].addActionListener(this);	decButton.addActionListener(this);  	decButton.setFont(font1);
+		keyButton[5].addActionListener(this);	equButton.addActionListener(this);  	equButton.setFont(font2);
 		keyButton[6].addActionListener(this);	delButton.addActionListener(this);	delButton.setFont(font2);
-		keyButton[7].addActionListener(this);	clrButton.addActionListener(this);  clrButton.setFont(font2);
-		keyButton[8].addActionListener(this);	sigButton.addActionListener(this);  sigButton.setFont(font2);
-		keyButton[9].addActionListener(this);	modButton.addActionListener(this);  modButton.setFont(font2);
+		keyButton[7].addActionListener(this);	clrButton.addActionListener(this);  	clrButton.setFont(font2);
+		keyButton[8].addActionListener(this);	sigButton.addActionListener(this);  	sigButton.setFont(font2);
+		keyButton[9].addActionListener(this);	modButton.addActionListener(this);  	modButton.setFont(font2);
 
 		panel = new JPanel();
 		panel.setLayout(null);	
