@@ -69,7 +69,7 @@ public class Calculator implements ActionListener{
 		sigButton.setBackground(Color.orange);      	sigButton.setForeground(Color.white);	sigButton.setFont(font1);
 		modButton.setBackground(Color.orange);      	modButton.setForeground(Color.white);	modButton.setFont(font1);
 		
-		ImageIcon imageDel = new ImageIcon(t.getImage("Icon156.png"));
+		ImageIcon imageDel = new ImageIcon(t.getImage("clearbutton.png"));
 		
 		delButton = new JButton();				
 		delButton.setFocusPainted(false);
